@@ -21,6 +21,14 @@
   ],
   "author": "IAFEnvoy",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAFEnvoy/pendulum-mcp-dispatcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IAFEnvoy/pendulum-mcp-dispatcher/issues"
+  },
+  "homepage": "https://github.com/IAFEnvoy/pendulum-mcp-dispatcher#readme",
   "engines": {
     "node": ">=18"
   },

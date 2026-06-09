@@ -1,6 +1,14 @@
-# Pendulum Dispatcher
+# Pendulum MCP Dispatcher
 
 Pendulum MCP dispatcher layer — a transparent proxy between AI clients and the Minecraft MCP server.
+
+## What is Pendulum MCP?
+
+Pendulum is a Minecraft mod that exposes in-game actions as tools via an MCP (Minecraft Code Protocol) server. It allows AI agents to interact with the Minecraft world by calling these tools.
+
+Currently, Pendulum support both Data Mode and Visual Mode tools. Data Mode provides JavaScript APIs for direct control (like `Playwright.js`), while Visual Mode allows agents to interact with the game through screenshots and simulated input.
+
+For more details, see the [Pendulum GitHub repository](https://github.com/IAFEnvoy/Pendulum), you can also get compiled jars from [CurseForge](https://www.curseforge.com/minecraft/mc-mods/pendulum) and [Modrinth](https://modrinth.com/mod/pendulum). Also you can refer to [Documentation](https://docs.iafenvoy.com/docs/mod/pendulum) for the complete tool list and usage instructions.
 
 ## Why a Dispatcher Layer
 
@@ -111,6 +119,6 @@ Then retry your request.
 
 ## Notes
 
-- **No automatic game launch**: You need to manually start Minecraft and run `/pendulum mcp start`
+- **No automatic game launch**: You need to manually start Minecraft and run `/pendulum mcp start`, you can also make it run on game launch by configuring.
 - **Independent connection per request**: Uses short-lived connections to avoid state issues with persistent TCP connections
 - **120s timeout**: The `script/eval` timeout matches the backend

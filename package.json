@@ -1,9 +1,12 @@
 {
   "name": "pendulum-mcp-dispatcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP forwarding layer for Pendulum — proxies requests to Minecraft MCP server",
   "type": "module",
   "main": "index.js",
+  "bin": {
+    "pendulum-mcp-dispatcher": "index.js"
+  },
   "files": [
     "index.js",
     "tools.js"

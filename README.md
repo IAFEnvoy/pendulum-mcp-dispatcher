@@ -4,7 +4,7 @@ Pendulum MCP dispatcher layer — a transparent proxy between AI clients and the
 
 ## What is Pendulum MCP?
 
-Pendulum is a Minecraft mod that exposes in-game actions as tools via an MCP (Minecraft Code Protocol) server. It allows AI agents to interact with the Minecraft world by calling these tools.
+Pendulum is a Minecraft mod that exposes in-game actions as tools via an MCP (Model Context Protocol) server. It allows AI agents to interact with the Minecraft world by calling these tools.
 
 Currently, Pendulum support both Data Mode and Visual Mode tools. Data Mode provides JavaScript APIs for direct control (like `Playwright.js`), while Visual Mode allows agents to interact with the game through screenshots and simulated input.
 

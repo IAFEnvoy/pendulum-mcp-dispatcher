@@ -23,18 +23,26 @@ This dispatcher layer solves the problem:
 ## Installation
 
 ```bash
-cd dispatcher
-npm install
+npm install -g pendulum-mcp-dispatcher
+```
+
+Or use `npx` to run it on-the-fly without installing:
+
+```bash
+npx pendulum-mcp-dispatcher
 ```
 
 ## Usage
 
 ```bash
 # Default connection to localhost:25566
-node index.js
+pendulum-mcp-dispatcher
+
+# Or via npx
+npx pendulum-mcp-dispatcher
 
 # Custom backend address
-PENDULUM_HOST=192.168.1.100 PENDULUM_PORT=25566 node index.js
+PENDULUM_HOST=192.168.1.100 PENDULUM_PORT=25566 pendulum-mcp-dispatcher
 ```
 
 ## Configuring AI Clients
@@ -48,8 +56,8 @@ In `.vscode/mcp.json`:
   "servers": {
     "pendulum": {
       "type": "stdio",
-      "command": "node",
-      "args": ["dispatcher/index.js"],
+      "command": "npx",
+      "args": ["-y", "pendulum-mcp-dispatcher"],
       "env": {
         "PENDULUM_HOST": "localhost",
         "PENDULUM_PORT": "25566"
@@ -67,8 +75,8 @@ In `claude_desktop_config.json`:
 {
   "mcpServers": {
     "pendulum": {
-      "command": "node",
-      "args": ["path/to/pendulum/dispatcher/index.js"],
+      "command": "npx",
+      "args": ["-y", "pendulum-mcp-dispatcher"],
       "env": {
         "PENDULUM_HOST": "localhost",
         "PENDULUM_PORT": "25566"
